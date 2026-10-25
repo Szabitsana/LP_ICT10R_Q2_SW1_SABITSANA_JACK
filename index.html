@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+      href="https://pyscript.net/releases/2026.7.3/core.css">
+
+    <script type="module"
+        src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <title>Varsity Voys</title>
+
+    <style>
+        body {
+            background-color: #eaf6ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            color: #234568;
+        }
+
+        header {
+            background-color: #90caf9;
+            padding: 30px;
+            border-bottom: 5px solid #42a5f5;
+        }
+
+        .reactor {
+            width: 60px;
+            height: 60px;
+            background-color: #eaf6ff;
+            border: 5px solid #42a5f5;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 10px 0;
+            color: #123b63;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 5px;
+            color: #234568;
+        }
+
+        main {
+            background-color: white;
+            width: 80%;
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 30px;
+            border: 2px solid #bbdefb;
+            border-radius: 15px;
+            box-shadow: 0 5px 12px #c5dff5;
+        }
+
+        h2 {
+            color: #1976d2;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #bbdefb;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #42a5f5;
+        }
+
+        button {
+            background-color: #42a5f5;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            margin-top: 15px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1976d2;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        footer {
+            padding: 15px;
+            color: #52789c;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="reactor"></div>
+        <h1>Varsity Voys</h1>
+        <p>Maasim Gamers</p>
+    </header>
+
+    <main>
+        <h2>Member Verification</h2>
+        <p>Enter your name to check your membership status.</p>
+
+        <form id="member-form">
+            <input type="text" id="first_name"
+                   placeholder="Enter your first name" required>
+            <br>
+
+            <input type="text" id="last_name"
+                   placeholder="Enter your last name" required>
+            <br>
+
+            <button type="submit">Check Membership</button>
+        </form>
+
+            <div id="result"></div>
+</main>
+
+<footer>
+    &copy; 2026 Varsity Voys | Maasim Gamers
+</footer>
+
+<script type="py" src="./main.py"></script>
+
+</body>
+</html>
